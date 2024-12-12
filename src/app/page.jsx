@@ -10,7 +10,10 @@ import About from "./components/about";
 import Footer from "./components/footer";
 import Top from "./components/top";
 
-export default function Home() {
+export default async function Home() {
+	const res = await fetch('http:/127.0.0.1:3000/home')
+	const portfolio = await res.json()
+	console.log(portfolio)
   return (
     <>
       <div className="shadow-headerShadow fixed w-full top-0 z-10 left-0 bg-white font-ptSans">
@@ -41,7 +44,7 @@ export default function Home() {
           <Nav></Nav>
         </div>
         <div className="w-[90%] mx-auto mt-[70px] lg:mt-auto lg:w-[90%] px-4">
-          <Top></Top>
+          <Top topLeftImg={portfolio.portfolio.topLeftImage}></Top>
           <Services></Services>
           <Books></Books>
           <About></About>
@@ -50,4 +53,7 @@ export default function Home() {
       </div>
     </>
   );
+
+
+
 }

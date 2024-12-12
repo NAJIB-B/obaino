@@ -1,8 +1,26 @@
+"use client"
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 
-const Top = () => {
-	return ( 
+
+const Top = ({topLeftImg}) => {
+
+// 	const [topLeftImage, setTopLeftImage] = useState(null)
+// 	console.log("it got here, top left image", topLeftImg)
+
+// 	useEffect(()=> {
+// 		console.log("one")
+// 		console.log(topLeftImg)
+// 		if (topLeftImg) {
+// 		const uint8Array = new Uint8Array(topLeftImg.data)
+// const topLeftImageBlob = new Blob([uint8Array], { type: 'image/svg' })
+// 			const topLeftImageSrc = URL.createObjectURL(topLeftImageBlob)
+// 			setTopLeftImage(topLeftImageSrc)
+// 		}
+// 		console.log("three")
+// 	}, [topLeftImg6])
+	return ( 	
 		<>
 		<div>
             <div className="mt-5">
