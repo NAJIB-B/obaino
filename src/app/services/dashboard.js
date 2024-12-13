@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { getCookie } from 'cookies-next/client';
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+const baseUrl = "https://obaino-backend.onrender.com/";
 
 const baseQuery = fetchBaseQuery({
   baseUrl: baseUrl,
@@ -9,7 +9,6 @@ const baseQuery = fetchBaseQuery({
 
     // get the token from the cookies
     const token = getCookie('token');
-
 
     // If we have a token set in state, let's assume that we should be passing it.
     if (token) {
