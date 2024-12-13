@@ -11,7 +11,7 @@ import Footer from "./components/footer";
 import Top from "./components/top";
 
 export default async function Home() {
-	const res = await fetch('http:/127.0.0.1:3000/home')
+	const res = await fetch('https://obaino-backend.onrender.com/home')
 	const portfolio = await res.json()
 	console.log(portfolio)
   return (

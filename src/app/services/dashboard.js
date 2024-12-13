@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { getCookie } from 'cookies-next/client';
 
-const baseUrl = 'http://127.0.0.1:3000/';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const baseQuery = fetchBaseQuery({
   baseUrl: baseUrl,
