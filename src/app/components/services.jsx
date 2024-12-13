@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 
-const services = [1, 2, 3, 4, 5]
-const Services = () => {
+
+const Services = ({services}) => {
   return (
     <div className="mt-[9rem]">
       <div className="flex flex-col lg:flex-row justify-between my-4 lg:items-center">
@@ -18,16 +18,15 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className=" md:inline-flex gap-5 my-6 overflow-auto service-scrollbar">
+      <div className=" md:inline-flex gap-5 my-6 overflow-auto service-scrollbar pb-6">
 		{services.map((service, index) => (
  <div key={index} className="flex flex-col p-4  md:max-w-[320px] flex-shrink-0 border border-gray2  hover:border-orange2 hover:bg-orange hover:text-white rounded-[7px] max-[768px]:my-8">
- <h4 className="font-bold text-[22px] my-4">Lighting Services</h4>
+ <h4 className="font-bold text-[22px] my-4">{service.title}</h4>
  <p className="text-[14px] my-3">
-   Our expert advice on outdoor lighing will hwlp you to plan how to
-   give your space a befitting look and is a a simple game changer
+{service.description}
  </p>
  <Image
-   src="/service1.svg"
+   src={service.image}
    alt="image 2"
    width={100}
    height={100}

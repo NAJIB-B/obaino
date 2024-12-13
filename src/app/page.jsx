@@ -44,9 +44,13 @@ export default async function Home() {
           <Nav></Nav>
         </div>
         <div className="w-[90%] mx-auto mt-[70px] lg:mt-auto lg:w-[90%] px-4">
-          <Top topLeftImg={portfolio.portfolio.topLeftImage}></Top>
-          <Services></Services>
-          <Books></Books>
+          <Top topLeftImage={portfolio.portfolio.topLeftImage}
+		  topCenterImg1={portfolio.portfolio.topCenterImg1}
+		  topCenterImg2={portfolio.portfolio.topCenterImg2}
+		  topRightImage={portfolio.portfolio.topRightImage}
+		  ></Top>
+          <Services services={portfolio.portfolio.services}></Services>
+          <Books books={portfolio.portfolio.books}></Books>
           <About></About>
           <Footer></Footer>
         </div>

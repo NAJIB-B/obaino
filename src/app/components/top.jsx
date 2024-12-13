@@ -4,22 +4,9 @@ import { useState, useEffect } from "react";
 
 
 
-const Top = ({topLeftImg}) => {
+const Top = ({topLeftImage, topRightImage, topCenterImg1, topCenterImg2}) => {
 
-// 	const [topLeftImage, setTopLeftImage] = useState(null)
-// 	console.log("it got here, top left image", topLeftImg)
 
-// 	useEffect(()=> {
-// 		console.log("one")
-// 		console.log(topLeftImg)
-// 		if (topLeftImg) {
-// 		const uint8Array = new Uint8Array(topLeftImg.data)
-// const topLeftImageBlob = new Blob([uint8Array], { type: 'image/svg' })
-// 			const topLeftImageSrc = URL.createObjectURL(topLeftImageBlob)
-// 			setTopLeftImage(topLeftImageSrc)
-// 		}
-// 		console.log("three")
-// 	}, [topLeftImg6])
 	return ( 	
 		<>
 		<div>
@@ -34,7 +21,7 @@ const Top = ({topLeftImg}) => {
             </div>
             <div className="flex flex-col lg:flex-row gap-4 my-4">
               <Image
-                src="/image1.svg"
+			src={topLeftImage}
                 alt="image 1"
                 width={100}
                 height={100}
@@ -43,14 +30,14 @@ const Top = ({topLeftImg}) => {
 
               <div className="flex flex-row lg:flex-col gap-4 w-full lg:w-[20%] items-end max-[600px]:flex-col">
                 <Image
-                  src="/image2.svg"
+                  src={topCenterImg1}
                   alt="image 2"
                   width={100}
                   height={100}
                   className="w-[100%]"
                 ></Image>
                 <Image
-                  src="/image3.svg"
+                  src={topCenterImg2}
                   alt="image 3"
                   width={100}
                   height={100}
@@ -59,7 +46,7 @@ const Top = ({topLeftImg}) => {
               </div>
 
               <Image
-                src="/image4.svg"
+                src={topRightImage}
                 alt="image 4"
                 width={100}
                 height={100}
