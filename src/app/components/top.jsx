@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 
 
-const Top = ({topLeftImage, topRightImage, topCenterImg1, topCenterImg2}) => {
+const Top = ({topLeftImage, topRightImage, topCenterImg1, topCenterImg2, video}) => {
 
 
 	return ( 	
@@ -14,7 +14,7 @@ const Top = ({topLeftImage, topRightImage, topCenterImg1, topCenterImg2}) => {
 			<iframe
         width="100%"
 		height="500px"
-        src="https://www.youtube.com/embed/6iBrB5i4jqg?si=EpNID5R7jlt9mRWR"
+        src={video}
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         title="obaino ted talk"

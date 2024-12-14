@@ -43,6 +43,14 @@ export const api = createApi({
 		}),
 		invalidatesTags: ['Portfolio']
 	}),
+	updateVideo: build.mutation({
+		query: (body) => ({
+			url: `portfolio/video	`,
+			method: 'PATCH',
+			body: body
+		}),
+		invalidatesTags: ['Portfolio']
+	}),
 	createService: build.mutation({
 		query: (body) => ({
 			url: 'service',
@@ -107,5 +115,6 @@ export const {
 	useUpdateServiceMutation,
 	useCreateBookMutation,
 	useUpdateBookMutation,
-	useDeleteBookMutation
+	useDeleteBookMutation,
+	useUpdateVideoMutation
 } = api

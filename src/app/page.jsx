@@ -71,6 +71,7 @@ export default async function Home() {
               topCenterImg1={portfolio.portfolio.topCenterImg1}
               topCenterImg2={portfolio.portfolio.topCenterImg2}
               topRightImage={portfolio.portfolio.topRightImage}
+			  video={portfolio.portfolio.video}
             ></Top>
           </section>
           <section id="Service">

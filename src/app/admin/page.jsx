@@ -90,17 +90,27 @@ const Admin = () => {
         <div className="w-[90%] mx-auto mt-[70px] lg:mt-auto lg:w-[90%] px-4">
           {data?.portfolio ? (
             <>
-              <TopAdmin
-                topLeftImage={data?.portfolio.topLeftImage}
-                topRightImage={data.portfolio.topRightImage}
-                topCenterImg1={data.portfolio.topCenterImg1}
-				topCenterImg2={data.portfolio.topCenterImg2}
-              ></TopAdmin>
-              <ServicesAdmin
-                services={data?.portfolio.services}
-              ></ServicesAdmin>
-              <BooksAdmin books={data?.portfolio.books}></BooksAdmin>
-              <About></About>
+              <section id="Home">
+                <TopAdmin
+                  topLeftImage={data?.portfolio.topLeftImage}
+                  topRightImage={data.portfolio.topRightImage}
+                  topCenterImg1={data.portfolio.topCenterImg1}
+                  topCenterImg2={data.portfolio.topCenterImg2}
+				  video={data.portfolio.video}
+                ></TopAdmin>
+              </section>
+              <section id="Service">
+                <ServicesAdmin
+                  services={data?.portfolio.services}
+                ></ServicesAdmin>
+              </section>
+              <section id="Books">
+                <BooksAdmin books={data?.portfolio.books}></BooksAdmin>
+              </section>
+
+              <section id="About">
+                <About></About>
+              </section>
             </>
           ) : (
             ""

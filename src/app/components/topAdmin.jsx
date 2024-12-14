@@ -5,23 +5,30 @@ import { faUpload, faCloudArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import EditableImage from "./editableImage";
+import EditVideoModal from "./editVideoModal";
 
 
-const TopAdmin = ({topLeftImage, topRightImage, topCenterImg1, topCenterImg2}) => {
+const TopAdmin = ({topLeftImage, topRightImage, topCenterImg1, topCenterImg2, video}) => {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	const openModal = () => setIsModalOpen(true);
+	const closeModal = () => setIsModalOpen(false);
 
 
 	return ( 	
 		<>
+<EditVideoModal closeModal={closeModal} isOpen={isModalOpen}></EditVideoModal>
 		<div>
             <div className="mt-5">
-			<div className="relative w-full h-full">
-			<Image
-                src="/video.svg"
-                alt="video"
-                width={100}
-                height={100}
-                className="rounded-tl-[20px] rounded-tr-[20px] w-[100%] h-[100%]"
-              ></Image>
+			<div className="relative w-full h-full" onClick={openModal}>
+			<iframe
+        width="100%"
+		height="500px"
+        src={video}
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        title="obaino ted talk"
+      />
 			   <div className="absolute inset-0 bg-gray-800 bg-opacity-60 backdrop-blur-md flex flex-col justify-center items-center text-white">
 					<div className="text-4xl mb-4">
 					<FontAwesomeIcon icon={faCloudArrowUp} width={20} className="hidden sm:block"></FontAwesomeIcon>
