@@ -11,13 +11,14 @@ const Top = ({topLeftImage, topRightImage, topCenterImg1, topCenterImg2}) => {
 		<>
 		<div>
             <div className="mt-5">
-              <Image
-                src="/video.svg"
-                alt="video"
-                width={100}
-                height={100}
-                className="rounded-tl-[20px] rounded-tr-[20px] w-[100%] h-[100%]"
-              ></Image>
+			<iframe
+        width="100%"
+		height="500px"
+        src="https://www.youtube.com/embed/6iBrB5i4jqg?si=EpNID5R7jlt9mRWR"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        title="obaino ted talk"
+      />
             </div>
             <div className="flex flex-col lg:flex-row gap-4 my-4">
               <Image
