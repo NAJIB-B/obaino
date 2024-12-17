@@ -24,21 +24,42 @@ body {
 
 
 .service-scrollbar::-webkit-scrollbar {
-	width: 10px;
-	padding-top: 10px;
+  width: 10px;
+  padding-top: 10px;
+}
+
+.service-scrollbar::-webkit-scrollbar-track {
+  background: #EFEFEF;
+}
+
+.service-scrollbar::-webkit-scrollbar-thumb {
+  background: #BBBBBB;
+  width: 1px;
+  height: 1px;
+  border-radius: 10px;
+}
+
+.service-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+@keyframes slide-colors {
+  from {
+    background-position: 0% 50%;
   }
-  
-  .service-scrollbar::-webkit-scrollbar-track {
-	background: #EFEFEF;
+
+  to {
+    background-position: 100% 50%;
   }
-  
-  .service-scrollbar::-webkit-scrollbar-thumb {
-	background: #BBBBBB;
-	width: 1px;
-	height: 1px;
-	border-radius: 10px;
-  }
-  
-  .service-scrollbar::-webkit-scrollbar-thumb:hover {
-	background: #555;
-  }
+}
+
+.break-text {
+  line-height: 1.6;
+  background: linear-gradient(90deg, gold, black, gold, black);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: slide-colors 2s linear 1;
+}

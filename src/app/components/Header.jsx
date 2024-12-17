@@ -45,7 +45,7 @@ export default function Header() {
                             <Image src="/star.svg" alt="stars" width={20} height={30}></Image>
                             <span className="text-lightGray">An Intro</span>
                         </div>
-                        <h1 className="max-[400px]:text-[25px] text-[30px] sm:text-[40px] lg:text-[60px] font-pattaya">
+                        <h1 className="max-[400px]:text-[25px] text-[30px] sm:text-[40px] lg:text-[60px] font-pattaya break-text">
                             The Renaissance Gentleman
                         </h1>
                     </div>

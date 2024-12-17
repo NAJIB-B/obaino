@@ -2,11 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-
-
 const Top = ({ topLeftImage, topRightImage, topCenterImg1, topCenterImg2, video }) => {
-
-
   return (
     <>
       <div>
@@ -18,6 +14,7 @@ const Top = ({ topLeftImage, topRightImage, topCenterImg1, topCenterImg2, video 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="obaino ted talk"
+            className="rounded-t-3xl"
           />
         </div>
         <div className="flex flex-col lg:flex-row gap-4 my-4">
@@ -26,12 +23,12 @@ const Top = ({ topLeftImage, topRightImage, topCenterImg1, topCenterImg2, video 
             alt="image 1"
             width={100}
             height={100}
-            className=" w-full lg:w-[40%] object-cover"
+            className=" w-full lg:w-[40%] object-cover rounded-b-3xl h-[393px]"
           ></Image>
 
-          <div className="flex flex-row lg:flex-col gap-4 w-full lg:w-[20%] items-end max-[600px]:flex-col">
+          <div className="flex flex-row lg:flex-col gap-[11px] w-full lg:w-[20%] items-end max-[600px]:flex-col">
             <Image
-              src={topCenterImg1}
+              src='/obiano_1.png'
               alt="image 2"
               width={100}
               height={100}
@@ -42,7 +39,7 @@ const Top = ({ topLeftImage, topRightImage, topCenterImg1, topCenterImg2, video 
               alt="image 3"
               width={100}
               height={100}
-              className="w-[100%]"
+              className="w-[100%] rounded-b-3xl"
             ></Image>
           </div>
 
@@ -51,7 +48,7 @@ const Top = ({ topLeftImage, topRightImage, topCenterImg1, topCenterImg2, video 
             alt="image 4"
             width={100}
             height={100}
-            className=" w-full lg:w-[40%]"
+            className=" w-full lg:w-[40%] object-cover rounded-b-3xl h-[393px]"
           ></Image>
         </div>
       </div>

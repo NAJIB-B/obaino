@@ -13,7 +13,6 @@ import Header from "./components/Header";
 export default async function Home() {
   const res = await fetch("https://obaino-backend.onrender.com/home");
   const portfolio = await res.json();
-  console.log(portfolio, 'porfolio');
   return (
     <>
       <Header />
@@ -21,7 +20,7 @@ export default async function Home() {
         <Nav />
       </div>
       <div className="flex flex-col justify-center lg:flex-row lg:-mt-[550px]">
-        <div className="px-10 mx-auto lg:mt-auto lg:pl-[15%]">
+        <div className="px-5 md:px-10 mx-auto lg:mt-auto lg:pl-[15%]">
           <section id="Home">
             <Top
               topLeftImage={portfolio.portfolio.topLeftImage}

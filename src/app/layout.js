@@ -5,6 +5,16 @@ import { Provider } from 'react-redux'
 import { store } from "@/store";
 import "./globals.css";
 
+const metadata = {
+  title: "Obiano",
+  description: "Obiano",
+  icons: {
+    icon: "./logo.svg",
+    apple: "./logo.svg",
+  },
+};
+
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
