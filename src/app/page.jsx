@@ -9,6 +9,7 @@ import About from "./components/about";
 import Footer from "./components/footer";
 import Top from "./components/top";
 import Header from "./components/Header";
+import Sidebar from "./components/sidebar";
 
 export default async function Home() {
   const res = await fetch("https://obaino-backend.onrender.com/home");
@@ -16,11 +17,9 @@ export default async function Home() {
   return (
     <>
       <Header />
-      <div className="w-full lg:w-[10%] lg:block hidden sticky top-0 z-10 shadow-headerShadow">
-        <Nav />
-      </div>
-      <div className="flex flex-col justify-center lg:flex-row lg:-mt-[550px]">
-        <div className="px-5 md:px-10 mx-auto lg:mt-auto lg:pl-[15%]">
+      <Sidebar />
+      <div className="flex flex-col justify-center lg:flex-row absolute top-[43%] sm:top-[50%] lg:top-[37%]">
+        <div className="px-5 md:px-10 mx-auto lg:pl-[16%]">
           <section id="Home">
             <Top
               topLeftImage={portfolio.portfolio.topLeftImage}
@@ -43,7 +42,7 @@ export default async function Home() {
             <Footer />
           </section>
         </div>
-      </div>
+      </div >
     </>
   );
 }

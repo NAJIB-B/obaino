@@ -1,19 +1,17 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faSquareInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
 	return (
 		<>
-			<div className="my-8 md:ml-[10%] md:-mr-[38px] sm:shadow-footerShadow px-7 pt-8 my-12 ">
+			<div className="mt-16 -mx-5 md:-mx-10 xl:-mx-12 sm:shadow-footerShadow px-7 pt-8 py-16 ">
 				<div className="flex flex-col-reverse sm:flex-col gap-[40px]">
 					<div className="">
 						<h2 className="text-black4 font-bold text-[20px] md:text-[25px] mb-8 sm:text-left text-center mt-8">Reach out to me on</h2>
 						<div className="flex gap-[45px] justify-center md:justify-start">
-							<Link href={'/'}><Image src="/insta_logo.png" width={40} height={40} alt="Instagram" /></Link>
-							<Link href={'/'}><Image src="/facebook_logo.png" width={40} height={40} alt="Facebook" /></Link>
-							<Link href={'/'}><Image src="/linkedin_logo.png" width={40} height={40} alt="LinkedIn" /></Link>
+							<Link href={'https://instagram.com'} target="_blank"><Image src="/insta_logo.png" width={40} height={40} alt="Instagram" /></Link>
+							<Link href={'https://facebook.com'} target="_blank"><Image src="/facebook_logo.png" width={40} height={40} alt="Facebook" /></Link>
+							<Link href={'https://linkedin.com'} target="_blank"><Image src="/linkedin_logo.png" width={40} height={40} alt="LinkedIn" /></Link>
 						</div>
 					</div>
 

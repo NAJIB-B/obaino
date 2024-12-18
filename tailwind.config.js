@@ -44,7 +44,7 @@ module.exports = {
 			},
 			boxShadow: {
 				headerShadow: '24px 0px 24px rgba(0, 0, 0, 0.12)',
-				footerShadow: '-10px -10px 20px rgba(0, 0, 0, 0.12)'
+				footerShadow: '10px -10px 20px rgba(0, 0, 0, 0.12)'
 			},
 		},
 	},
