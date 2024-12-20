@@ -26,20 +26,20 @@ const Top = ({ topLeftImage, topRightImage, topCenterImg1, topCenterImg2, video 
             className=" w-full lg:w-[40%] object-cover rounded-b-3xl h-[393px]"
           ></Image>
 
-          <div className="flex flex-row lg:flex-col gap-[11px] w-full lg:w-[20%] items-end max-[600px]:flex-col">
+          <div className="flex flex-row lg:flex-col gap-[1px] w-full lg:w-[20%] items-end max-[600px]:flex-col">
             <Image
               src='/obiano_1.png'
               alt="image 2"
               width={100}
               height={100}
-              className="w-[100%]"
+              className="w-[100%] h-[200px]"
             ></Image>
             <Image
               src={topCenterImg2}
               alt="image 3"
               width={100}
               height={100}
-              className="w-[100%] rounded-b-3xl"
+              className="w-[100%] h-[200px] rounded-b-3xl"
             ></Image>
           </div>
 

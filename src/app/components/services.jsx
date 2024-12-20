@@ -18,8 +18,8 @@ const Services = ({ services }) => {
       </div>
       <div className=" md:inline-flex gap-5 my-6 overflow-auto service-scrollbar pb-6">
         {services.map((service, index) => (
-          <div key={index} className="flex flex-col p-4 md:max-w-[320px] flex-shrink-0 border border-gray2  hover:border-orange2 
-          hover:bg-orange hover:text-white rounded-[7px] max-[768px]:my-8">
+          <div key={index} className="flex flex-col p-4 md:max-w-[320px] flex-shrink-0 border border-gray2  hover:border-black2 
+          hover:bg-black2 hover:text-white rounded-[7px] max-[768px]:my-8">
             <h4 className="font-bold text-[22px] my-4">{service?.title}</h4>
             <p className="text-[14px] my-3">
               {service?.description}
@@ -29,7 +29,7 @@ const Services = ({ services }) => {
               alt="image 2"
               width={100}
               height={100}
-              className="w-[100%]"
+              className="w-[100%] h-[259px]"
             ></Image>
           </div>
         ))}

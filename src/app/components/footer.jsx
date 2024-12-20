@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+
 
 const Footer = () => {
 	return (
@@ -19,12 +21,12 @@ const Footer = () => {
 						<div className="flex flex-col ">
 							<h2 className="text-black4 font-bold text-[20px] md:text-[25px] mb-8">Subscribe to my mailing list</h2>
 							<div className="flex flex-row">
-								<input type="text" className="bg-gray6 outline-none	rounded-l-2xl border-tr border-br border-tr-gray5 border-br-gray5 w-[75%] py-3 px-4" />
-								<button className="bg-black text-white w-[25%] py-3 text-[20px] rounded-r-2xl">Send</button>
+								<input type="text" className="bg-gray6 outline-none	rounded-l-xl border-tr border-br border-tr-gray5 border-br-gray5 w-[75%] py-3 px-4" />
+								<button className="bg-black text-white w-[25%] py-3 text-[20px] rounded-r-xl">Send</button>
 							</div>
-
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</>

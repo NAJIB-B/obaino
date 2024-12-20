@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-
 import Nav from "./components/nav";
 import Services from "./components/services";
 import Books from "./components/books";
@@ -10,6 +9,7 @@ import Footer from "./components/footer";
 import Top from "./components/top";
 import Header from "./components/Header";
 import Sidebar from "./components/sidebar";
+import Calendly from "./components/calendly";
 
 export default async function Home() {
   const res = await fetch("https://obaino-backend.onrender.com/home");
