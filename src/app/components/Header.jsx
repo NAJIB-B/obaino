@@ -9,7 +9,7 @@ import Logo from "./logo"
 
 export default function Header() {
     return (
-        <div className="fixed top-0 w-full z-20 bg-white shadow-headerShadow header_o  h-[43%] sm:h-[50%] lg:h-[37%]">
+        <div className="fixed top-0 w-full z-20 bg-white shadow-headerShadow header_o  sm:h-[50%] lg:h-[37%]">
             <Logo />
             <div className="flex justify-center items-center">
                 <Image src="/star.svg" alt="stars" width={20} height={30}></Image>
