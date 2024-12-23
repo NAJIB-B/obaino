@@ -46,8 +46,8 @@ const Login = () => {
   return (
     <>
       {isLoading ? <LoadingPage></LoadingPage> : ""}
-      <div>
-        <div className="w-full top-0 z-10 left-0 bg-white font-ptSans mt-6">
+      <div className="">
+        <div className="w-full top-0 left-0 bg-white font-ptSans mt-6 ">
           <div className="bg-white">
             <div className="flex items-center justify-center relative p-7">
               <Image
@@ -73,31 +73,31 @@ const Login = () => {
             <div className="w-full lg:hidden block"></div>
           </div>
         </div>
-        <div className="absolute top-[40%] left-[50%] translate-x-[-50%]  text-center">
-          <h1 className="font-bold text-[24px]">Log In to Admin</h1>
+        <div className="absolute top-[47%] left-[50%] translate-x-[-50%] text-center">
+          <h1 className="font-bold text-[24px] text-gray4 mb-3">Log In to Admin</h1>
           <form onSubmit={handleLogin}>
             <input
               type="text"
-              className="p-5 border border-gray8 my-2 outline-none rounded-[10px] bg-gray9"
+              className="p-5 border border-gray8 my-2 outline-none rounded-[10px] bg-gray9 lg:w-[558px]"
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="email"
+              placeholder="Email"
               required
             />
             <br />
             <input
               type="text"
-              className="p-5 border border-gray8 my-2 outline-none rounded-[10px] bg-gray9"
+              className="p-5 border border-gray8 my-2 outline-none rounded-[10px] bg-gray9 lg:w-[558px]"
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="password"
+              placeholder="Password"
               required
             />
             <br />
             {errorMsg ? <p className="text-red-500">{errorMsg}</p> : ""}
             <button
-              className="bg-black rounded font-bold text-white py-2 px-6 my-3"
+              className="bg-black rounded font-bold text-white py-2 px-6 my-3 lg:w-[187px] hover:bg-gray-600"
               type="submit"
             >
-              Login
+              Log In
             </button>
           </form>
         </div>

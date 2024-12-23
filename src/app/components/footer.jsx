@@ -19,10 +19,10 @@ const Footer = () => {
 
 					<div className="flex justify-center sm:justify-end mt-8 ">
 						<div className="flex flex-col ">
-							<h2 className="text-black4 font-bold text-[20px] md:text-[25px] mb-8">Subscribe to my mailing list</h2>
+							<h2 className="text-black4 font-bold text-[20px] md:text-[32px] mb-8">Subscribe to my mailing list</h2>
 							<div className="flex flex-row">
-								<input type="text" className="bg-gray6 outline-none	rounded-l-xl border-tr border-br border-tr-gray5 border-br-gray5 w-[75%] py-3 px-4" />
-								<button className="bg-black text-white w-[25%] py-3 text-[20px] rounded-r-xl">Send</button>
+								<input type="text" className="bg-gray6 outline-none	rounded-l-[7px] border-tr border-br border-tr-gray5 border-br-gray5 w-[75%] py-3 px-4" />
+								<button className="bg-black text-white w-[25%] py-3 text-[20px] rounded-r-[7px]">Send</button>
 							</div>
 						</div>
 					</div>
