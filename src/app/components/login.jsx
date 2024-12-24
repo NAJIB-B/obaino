@@ -47,7 +47,7 @@ const Login = () => {
     <>
       {isLoading ? <LoadingPage></LoadingPage> : ""}
       <div className="">
-        <div className="w-full top-0 left-0 bg-white font-ptSans mt-6 ">
+        <div className="w-full top-0 left-0 bg-white font-productSans mt-6 ">
           <div className="bg-white">
             <div className="flex items-center justify-center relative p-7">
               <Image

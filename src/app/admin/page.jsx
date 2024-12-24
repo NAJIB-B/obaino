@@ -38,7 +38,7 @@ const Admin = () => {
     <>
       {isLoading ? <LoadingPage></LoadingPage> : ""}
       {isFetching ? <LoadingPage></LoadingPage> : ""}
-      <div className="shadow-headerShadow fixed w-full top-0 z-10 left-0 bg-white font-ptSans">
+      <div className="shadow-headerShadow fixed w-full top-0 z-10 left-0 bg-white font-productSans">
         <div className="bg-white">
           <div className="flex items-center justify-center relative p-7">
             <Image
@@ -96,7 +96,7 @@ const Admin = () => {
                   topRightImage={data.portfolio.topRightImage}
                   topCenterImg1={data.portfolio.topCenterImg1}
                   topCenterImg2={data.portfolio.topCenterImg2}
-				  video={data.portfolio.video}
+                  video={data.portfolio.video}
                 ></TopAdmin>
               </section>
               <section id="Service">

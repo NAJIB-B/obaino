@@ -11,7 +11,7 @@ const Books = ({ books }) => {
 			<div className="md:inline-flex gap-5 my-6 overflow-auto service-scrollbar">
 				{books.map((book, index) => (
 					<div className="flex flex-col lg:flex-row text-black2 md:max-w-full flex-shrink-0 gap-[40px] items-center my-4" key={index}>
-						<div className="lg:w-[30%]">
+						<div className="w-full lg:w-[30%]">
 							<Image
 								src={book.image}
 								alt="image 2"

@@ -41,7 +41,8 @@ module.exports = {
 			},
 			fontFamily: {
 				ptSans: ['var(--font-pt-sans)'],
-				pattaya: ['var(--font-pattaya)']
+				pattaya: ['var(--font-pattaya)'],
+				productSans: ['Product Sans', 'sans-serif'], 
 			},
 			boxShadow: {
 				headerShadow: '24px 0px 24px rgba(0, 0, 0, 0.12)',

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   --background: #ffffff;
@@ -16,28 +16,18 @@
   }
 }
 
-.pt-sans-regular {
-  font-family: "PT Sans", serif;
-  font-weight: 400;
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
-.pt-sans-bold {
-  font-family: "PT Sans", serif;
-  font-weight: 700;
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
-}
-
-.pt-sans-regular-italic {
-  font-family: "PT Sans", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.pt-sans-bold-italic {
-  font-family: "PT Sans", serif;
-  font-weight: 700;
-  font-style: italic;
 }
 
 
@@ -45,8 +35,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: "PT Sans", serif;
-  
+  /* font-family: 'Product Sans', sans-serif; */
+
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -97,4 +87,3 @@ body {
 .header_o {
   background-image: url('/header_bg.png');
 }
-

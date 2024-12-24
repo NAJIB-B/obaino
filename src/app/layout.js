@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${pt_sans.variable} ${pattaya.variable} text-black2 bg-obWhite`}
+        className={`${pt_sans.variable} ${pattaya.variable} text-black2 bg-obWhite `}
       >
 		<Provider store={store}>
 		{children}

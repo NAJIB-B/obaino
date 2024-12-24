@@ -15,7 +15,11 @@ export default async function Home() {
   const res = await fetch("https://obaino-backend.onrender.com/home");
   const portfolio = await res.json();
   return (
-    <>
+    <div>
+       <link
+          href="https://fonts.googleapis.com/css2?family=Product+Sans&display=swap"
+          rel="stylesheet"
+        />
       <Header />
       <Sidebar />
       <div className="flex flex-col justify-center lg:flex-row absolute top-[43%] sm:top-[50%] lg:top-[37%]">
@@ -43,6 +47,6 @@ export default async function Home() {
           </section>
         </div>
       </div >
-    </>
+    </div>
   );
 }
