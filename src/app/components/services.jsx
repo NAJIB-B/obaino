@@ -5,7 +5,7 @@ const Services = ({ services }) => {
     <div className="mt-[8rem]">
       <div className="flex flex-col lg:flex-row justify-between my-4 lg:items-center ">
         <div className="lg:w-[50%]">
-          <h2 className="font-bold text-[30px] sm:text-[40px] md:text-[50px] max-[768px]:mb-6 font-productSans">My Services</h2>
+          <h2 className="font-extrabold text-[30px] sm:text-[40px] md:text-[50px] max-[768px]:mb-6 font-productSans">My Services</h2>
         </div>
 
         <div className="flex justify-end lg:w-[50%] max-[768px]:mt-6">

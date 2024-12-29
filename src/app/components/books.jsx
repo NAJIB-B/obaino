@@ -5,7 +5,7 @@ import Image from "next/image";
 const Books = ({ books }) => {
 	return (
 		<div className="my-8">
-			<h2 className=" text-black2 text-[30px] sm:text-[40px] md:text-[50px] font-bold my-5">
+			<h2 className=" text-black2 text-[30px] sm:text-[40px] md:text-[50px] font-extrabold my-5">
 				A featured collection of books
 			</h2>
 			<div className="md:inline-flex gap-5 my-6 overflow-auto service-scrollbar">
