@@ -15,7 +15,7 @@ export default async function Home() {
   const res = await fetch("https://obaino-backend.onrender.com/home");
   const portfolio = await res.json();
   return (
-    <div>
+    <div className="font-productSans">
        
       <Header />
       <Sidebar />

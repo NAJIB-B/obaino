@@ -18,15 +18,8 @@
 
 @font-face {
   font-family: 'Product Sans';
-  src: url('/fonts/ProductSans-Regular.ttf') format('truetype');
+  src: url('/fonts/product-sans/ProductSans-Regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Product Sans';
-  src: url('/fonts/ProductSans-Bold.ttf') format('truetype');
-  font-weight: bold;
   font-style: normal;
 }
 
