@@ -12,7 +12,7 @@ import Sidebar from "./components/sidebar";
 import Calendly from "./components/calendly";
 
 export default async function Home() {
-  const res = await fetch("https://obaino-backend.onrender.com/home");
+  const res = await fetch("https://mybackend.stuff.stuff", {cache: 'no-store'});
   const portfolio = await res.json();
   return (
     <div className="font-productSans">
