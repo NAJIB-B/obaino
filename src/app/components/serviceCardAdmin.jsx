@@ -39,7 +39,7 @@ const ServiceCardAdmin = ({service, index}) => {
 
 <div
 		key={index}
-		className="flex flex-col p-4 md:max-w-[320px] flex-shrink-0 border border-gray2  hover:border-black2 
+		className="flex flex-col p-4 md:max-w-[410px] flex-shrink-0 border border-gray2  hover:border-black2 
           hover:bg-black2 hover:text-white rounded-[7px] max-[768px]:my-8"
 	  >
 		<div className="">
