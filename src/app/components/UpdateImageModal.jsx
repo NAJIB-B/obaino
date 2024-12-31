@@ -45,7 +45,7 @@ const UpdateImageModal = ({ isOpen, closeModal, name}) => {
         >
           ×
         </button>
-        <h2 className="text-2xl font-semibold text-center mb-4">Add A Book</h2>
+        <h2 className="text-2xl font-semibold text-center mb-4">Update Image</h2>
         <form onSubmit={handleSubmit}>
 
 
