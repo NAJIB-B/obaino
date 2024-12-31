@@ -1,4 +1,4 @@
-'use client'
+
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -10,27 +10,15 @@ import Footer from "./components/footer";
 import Top from "./components/top";
 import Header from "./components/Header";
 import Sidebar from "./components/sidebar";
-import { useEffect, useState } from "react";
-import LoadingPage from "./components/loadingPage";
-import Calendly from "./components/calendly";
-
-export default function Home() {
 
 
-  const [portfolio, setPortfolio] = useState(null)
- 
-  useEffect(() => {
-    async function fetchPosts() {
-      const res = await fetch("https://obaino-backend.onrender.com/home")
-      const data = await res.json()
-	  console.log("the data", data)
-      setPortfolio(data)
-    }
-    fetchPosts()
-  }, [])
 
 
-  if (!portfolio) return <LoadingPage></LoadingPage>
+export default async function Home() {
+
+      const res = await fetch("https://obaino-backend.onrender.com/home", {cache: 'no-store'})
+      const portfolio = await res.json()
+
   return (
     <div className="font-productSans">
        
