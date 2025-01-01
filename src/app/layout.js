@@ -52,6 +52,8 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Product+Sans&display=swap"
           rel="stylesheet"
         />
+		<title>The Renaissance Gentleman</title>
+		<meta name="description" content="The Renaissance Gentleman- rediscovering the lost art of masculinity"></meta>
       </Head>
       <body
         className={`${pt_sans.variable} ${pattaya.variable} text-black2 bg-obWhite`}
