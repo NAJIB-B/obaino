@@ -11,6 +11,18 @@ import Top from "./components/top";
 import Header from "./components/Header";
 import Sidebar from "./components/sidebar";
 
+export const metadata = {
+	title: 'The Renaissance Gentleman',
+	description:
+	  'The Renaissance Gentleman- rediscovering the lost art of masculinity',
+	robots: 'all',
+	icons: {
+	  other: {
+		rel: 'canonical',
+		url: 'https://www.therenaissancegentleman.com/',
+	  },
+	},
+  };
 
 
 
