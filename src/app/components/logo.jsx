@@ -25,21 +25,20 @@ export default function Logo() {
           className="sm:hidden block"
         ></Image>
 
-        <div className="absolute flex flex-row items-center rounded-[80px] border border-darkGray sm:py-2 max-[400px]:px-1 px-2 sm:px-[12px] right-4 max-[500px]:right-1 gap-1 sm:gap-3 text-[16px] max-[500px]:text-[13px]">
-          <span>Reach out to me</span>
+        <div className="absolute flex flex-row items-center rounded-[80px]  border border-darkGray sm:py-2 max-[400px]:px-1 px-2 sm:px-[12px] right-4 max-[500px]:right-1 gap-3 sm:gap-3 text-[16px] max-[500px]:text-[13px]">
+          <span className="hidden sm:block">Reach out to me</span>
           <Link href={"mailto:Info@therenaissancegentleman.com"} target="_blank">
             <FontAwesomeIcon
               icon={faEnvelope}
-              width={25}
-              className="hidden sm:block"
+              className="text-[20px]"
             />
           </Link>
           <Link href={"https://wa.me/+2348103291450"} target="_blank">
             <IoLogoWhatsapp
               color="#25D366"
-              size={22}
+              size={25}
 			  target="_blank"
-              className="hidden sm:block"
+              className=""
             />
           </Link>
         </div>

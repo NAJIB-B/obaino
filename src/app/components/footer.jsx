@@ -1,6 +1,8 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 
 const Footer = () => {
@@ -11,9 +13,10 @@ const Footer = () => {
 					<div className="">
 						<h2 className="text-black4 font-bold text-[20px] md:text-[25px] mb-8 sm:text-left text-center mt-8">Reach out to me on</h2>
 						<div className="flex gap-[45px] justify-center md:justify-start">
-							<Link href={'https://instagram.com'} target="_blank"><Image src="/insta_logo.png" width={40} height={40} alt="Instagram" /></Link>
-							<Link href={'https://facebook.com'} target="_blank"><Image src="/facebook_logo.png" width={40} height={40} alt="Facebook" /></Link>
-							<Link href={'https://linkedin.com'} target="_blank"><Image src="/linkedin_logo.png" width={40} height={40} alt="LinkedIn" /></Link>
+							<Link href={'https://www.instagram.com/obinnatrg/'} target="_blank"><Image src="/insta_logo.png" width={40} height={40} alt="Instagram" /></Link>
+							<Link href={'https://www.facebook.com/obaino.ogadah/'} target="_blank"><Image src="/facebook_logo.png" width={40} height={40} alt="Facebook" /></Link>
+							<Link href={'http://linkedin.com/in/obinna-ogadah-6a5b20b0'} target="_blank"><Image src="/linkedin_logo.png" width={40} height={40} alt="LinkedIn" /></Link>
+							<Link href={'https://x.com/OgadahObinna'} target="_blank"><FontAwesomeIcon icon={faXTwitter} className="text-[38px]"></FontAwesomeIcon></Link>
 						</div>
 					</div>
 
