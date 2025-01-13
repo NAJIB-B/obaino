@@ -9,11 +9,7 @@ const Services = ({ services }) => {
         </div>
 
         <div className="flex justify-end lg:w-[50%] max-[768px]:mt-6">
-          <p className="text-gray3 text-[16px] leading-6">
-            Professional writing, ghostwriting, and editing services to bring
-            your stories and ideas to life. Let’s create something extraordinary
-            together!
-          </p>
+          <p className="text-gray3 text-[16px] leading-6"></p>
         </div>
       </div>
       <div className=" md:inline-flex gap-5 my-6 overflow-auto service-scrollbar pb-6 ">
