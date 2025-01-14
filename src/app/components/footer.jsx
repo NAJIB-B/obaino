@@ -28,7 +28,7 @@ const Footer = () => {
 		  })
 
 		  setLoading(false)
-		  toast('Email added successfully', {
+		  toast.success('Email added successfully', {
 			position: "top-right",
 			autoClose: 5000,
 			hideProgressBar: false,
